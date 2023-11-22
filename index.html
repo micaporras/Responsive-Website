@@ -128,35 +128,56 @@
         <!-- end of skills section -->
 
         <!-- contact section -->
-        <div id="contact">
-            <div class="contact-section">
-                <div class="contact-content">
-                    <h3 class="contact-intro">CONTACT</h3>
-                    <p class="contact-title">Get In Touch</p>
-                    <table>
-                        <tr>
-                            <td><a><i class="fa-brands fa-facebook"></i></a></td>
-                            <td>Facebook</td>
-                            <td>Amelia Renaldo</td>
-                        </tr>
-                        <tr>
-                            <td><a><i class="fa-brands fa-square-instagram"></i></a></td>
-                            <td>Instagram</td>
-                            <td>ameliarenaldo</td>
-                        </tr>
-                        <tr>
-                            <td><a><i class="fa-brands fa-google"></i></a></td>
-                            <td>Google Mail</td>
-                            <td>amelia@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><a><i class="fa-solid fa-mobile"></i></a></td>
-                            <td>Phone Number</td>
-                            <td>09123456789</td>
-                        </tr>
-                    </table>
+        <div id="contact" class="contact section">
+            <div class="contact-container">
+                <div class="contact-data">
+                    <h2 class="section-title">
+                        <span>Contact Me</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Hi! If you have any questions, just kindly email me!
+                        I will get back to you as soon as I can!
+                    </p>
+                    <p class="contact-description2">
+                        All you need to do is fill up the form with your <b>Name</b>
+                        and <b>Email Address</b>. 
+                    </p>
+                </div>
+                <div class="contact-mail">
+                    <h2 class="contact-title">
+                        Send Me A Message
+                    </h2>
+
+                    <form action="" class="contact-form" id="contact-form">
+                        <div class="contact-group">
+                            <div class="contact-box">
+                                <input type="text" class="contact-input" id="name" placeholder="First Name">
+                                <label for="name" class="contact-label">First Name</label>
+                            </div>
+                            <div class="contact-box">
+                                <input type=email" class="contact-input" id=email" placeholder="Email Address">
+                                <label for="email" class="contact-label">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="contact-box">
+                            <input type="text" class="contact-input" id="subject" placeholder="Subject">
+                            <label for="subject" class="contact-label">Subject</label>
+                        </div>
+
+                        <div class="contact-box contact-area">
+                            <textarea name="" id="message" class="contact-input" placeholder="Write your message here"></textarea>
+                            <label for="message" class="contact-label">Message</label>
+                        </div>
+
+                        <button type="submit" class="contact-button button">
+                            <i class="fa-regular fa-paper-plane"></i> Send
+                        </button>
+                    </form>
                 </div>
             </div>
+            
         </div>
         <!-- end of contact section -->
     </div>

@@ -19,6 +19,7 @@ nav{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 100;
 }
 
 label.logo{
@@ -471,61 +472,16 @@ a.active, a:hover{
     margin-left: 50%;
 }
 
-#contact{
-    height: 700px;
-    background: pink;
-    display: inline-block;
-    width: 100%;
-    margin-top: 0%;
-}
-
-#contact .contact-section .contact-content .contact-intro{
-    font-size:18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    color: rgb(188, 77, 52);
+.contact {
     padding-top: 10%;
-    padding-left: 8%;
-    padding-bottom: 0%;
+    padding-bottom: 0;
+    background-color:pink;
+    height: 100%;
 }
 
-#contact .contact-section .contact-content .contact-title{
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #81045f;
-    padding-left: 8%;
-    padding-top: 1%;
-}
 
-#contact .contact-section .contact-content .contact-description{
-    font-size: 25px;
-    font-weight: 400;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgba(57, 18, 9, 1);
-    padding-left: 8%;
-    padding-top: 1%;
-}
-  
-table {
-    border-collapse: collapse;
-    width: 85%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 8%;
-}
-  
-td, th {
-    border: 2px solid black;
-    text-align: left;
-    padding: 8px;
-    color: #81045f;
-    font-size: 22px;
-}
 
-#contact a {
-    color: #81045f;
-}
+
 
 @media (max-width: 1231px){
     label.logo{
@@ -899,26 +855,361 @@ td, th {
         margin-left: 8%;
     }
 
-    #contact{
-        height: auto;
+    .contact {
+        padding-bottom: 0;
+        background-color:pink;
     }
 
-    td, th {
-        font-size: 20px;
+    .contact-container {
+        position: relative;
+        display: grid;
+        grid-template-rows: 300px max-content max-content;
     }
+
+    .contact-data {
+        position: relative;
+        width: 50%;
+        height: 300px;
+        background-color: white;
+        padding: 3rem 1.5rem 3.5rem;
+        margin-left: 25%;
+        border-bottom: 4px solid palevioletred;
+        z-index: 5;
+        transition: background-color .4s;
+    }
+
+    .section-title {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: #81045f;
+        padding-left: 8%;
+        padding-top: 1%;
+        margin: 0 0 1.5rem;
+        text-align: center;
+        transform: translateX(-3rem);
+    }
+
+    .contact-description{
+        color: black;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-description2{
+        color: black;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-description2 b{
+        color: #81045f;
+    }
+
+    .contact-mail {
+        position: relative;
+        background-color: #81045f;
+        padding: 5rem 1.5rem 2.5rem;
+        margin-top: -2.5rem;
+        transition: background-color .4s;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact-title {
+        color: white;
+        font-size: xx-large;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-form, .contact-group{
+        display: grid;
+        row-gap: 1.25rem;
+    }
+
+    .contact-form {
+        position: relative;
+    }
+
+
+    .contact-box {
+        position: relative;
+        width: 100%;
+        height: 58px;
+    }
+
+    .contact-input, .contact-button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        outline: none;
+        border: none;
+    }
+
+    .contact-input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #81045f;
+        border: 3px solid white;
+        color: white;
+        padding: .5rem 1rem;
+        font-weight: 16px;
+        transition: border .4s, background-color .4s;
+    }
+
+    .contact-input::placeholder{
+        color: white;
+        transition: opacity .4s;
+    }
+
+    .contact-input:focus{
+        border: 3px solid pink;
+    }
+
+    .contact-label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 400 ;
+        background-color: #81045f;
+        padding: 8px;
+        pointer-events: none;
+        transition: top .4s, opacity .4s, background-color .4s;
+        opacity: 0;
+    }
+
+    .contact-form .contact-area {
+        height: 10rem;
+
+    }
+
+    .contact-area textarea{
+        resize: none;
+        padding-top: 1rem;
+    }
+
+    .contact-button {
+        background-color: rgb(230, 65, 65);
+        cursor: pointer;
+        height: 40px;
+        color: white;
+    }
+
+    .contact-input:focus::placeholder {
+        opacity: 0;
+    }
+
+    .contact-input:focus + .contact-label,.contact-input:not(:placeholder-shown).contact-input:not(:focus) + .contact-label {
+        opacity: 1;
+        top: -16px;
+    }
+
 
 }
 
-@media (max-width: 858px){
-    #skills .skills-section .css{
+@media (max-width: 602px) {
+    .contact-container {
+        grid-template-columns: 100%;
+    }
+    
+    .contact-data {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        background-color:white;
+        padding: 2rem 1.5rem;
+        margin-top: 10%;
+        margin-left: 5%;
+        z-index: 5;
+        transition: background-color .4s;
+    }
+
+    .contact-mail {
+        margin-top: 5%;
+    }
+}
+    
+
+
+@media (min-width: 859px) {
+
+    .contact {
+        padding-bottom: 0;
+        background-color:pink;
+    }
+
+    .contact-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        row-gap: 0;
+    }
+
+    .contact-data {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        background-color:white;
+        padding: 2rem 1.5rem;
+        margin-left: 5%;
+        margin-top: 20%;
+        z-index: 5;
+        transition: background-color .4s;
+    }
+
+    .section-title {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: #81045f;
+        text-align: center;
         padding-left: 20%;
+        padding-top: 1%;
+        margin: 0 0 1.5rem;
+        transform: translateX(-3rem);
     }
 
-    #skills .skills-section .command{
-        padding-left: 3%;
+    .contact-description{
+        color: black;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    td, th {
-        font-size: 20px;
+    .contact-description2{
+        color: black;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-description2 b{
+        color: rgb(180, 38, 180);
+    }
+
+    .contact-mail {
+        position: relative;
+        background-color: #81045f;
+        padding: 5rem 1.5rem 2.5rem;
+        margin-top: -2.5rem;
+        margin-right: 5%;
+        transition: background-color .4s;
+        z-index: 0;
+        margin-bottom: 5%;
+    }
+
+    .contact-title {
+        color: white;
+        font-size: xx-large;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-form, .contact-group {
+        display: grid;
+        row-gap: 1.25rem;
+    }
+
+    .contact-group {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .contact-form {
+        position: relative;
+    }
+
+    .contact-box {
+        position: relative;
+        width: 100%;
+        height: 58px;
+    }
+
+    .contact-input, .contact-button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        outline: none;
+        border: none;
+    }
+
+    .contact-input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #81045f;
+        border: 3px solid white;
+        color: white;
+        padding: .5rem 1rem;
+        font-weight: 16px;
+        transition: border .4s, background-color .4s;
+    }
+
+    .contact-input::placeholder{
+        color: white;
+        transition: opacity .4s;
+    }
+
+    .contact-input:focus{
+        border: 3px solid pink;
+    }
+
+    .contact-label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 400 ;
+        background-color: #81045f;
+        padding: 8px;
+        pointer-events: none;
+        transition: top .4s, opacity .4s, background-color .4s;
+        opacity: 0;
+    }
+
+    .contact-form .contact-area {
+        height: 10rem;
+
+    }
+
+    .contact-area textarea{
+        resize: none;
+        padding-top: 1rem;
+    }
+
+    .contact-button {
+        background-color: rgb(230, 65, 65);
+        cursor: pointer;
+        height: 40px;
+        color: white;
+    }
+
+    .contact-input:focus::placeholder {
+        opacity: 0;
+    }
+
+    .contact-input:focus + .contact-label,.contact-input:not(:placeholder-shown).contact-input:not(:focus) + .contact-label {
+        opacity: 1;
+        top: -16px;
+    }
+}
+
+@media (min-width: 1930px){
+    #skills .skills-section .icons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin-left: 5%;
     }
 }
