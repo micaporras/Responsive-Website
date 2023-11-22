@@ -1,0 +1,920 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.checkbtn{
+    display: none;
+}
+
+nav{
+    background: rgb(252, 216, 255, 0.6);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+label.logo{
+    color: rgb(48, 11, 11);
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(57, 18, 9, 1);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.active, a:hover{
+    background: rgb(223, 79, 86);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(48, 11, 11);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+#menu .logo span{
+    color:#81045f;
+}
+
+#home .home-section .home-content .intro{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(188, 77, 52);
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 0%;
+}
+
+#home .home-section .home-content .name{
+    font-size: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgba(57, 18, 9, 1);
+    padding-left: 8%;
+    padding-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#home .home-section .home-content .description{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(57, 18, 9, 1);
+    padding-left: 8%;
+    padding-top: 0%;
+    margin-top: 1%;
+}
+
+#menu .hamburger:hover {
+    background-color: #bd5173;
+}
+
+
+#home{
+    height: 700px;
+    background: rgb(252, 216, 255);
+    display: flex;
+    width: 100%;
+    background-size: cover;
+}
+
+.home-section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+.home-content{
+    padding-left: 1%;
+    margin-left: 1%;
+    padding-right: 0;
+    margin-right: 1%;
+    float: left;
+    width: 60%;
+}
+
+.home-img img{
+    max-width: 280px;
+    border-radius: 50px;
+    padding-left: 2px;
+    margin-top: 40px;
+    margin-left: 2%;
+    width: 39%;
+    box-shadow:10px 10px 10px rgba(238, 4, 4, 0.3);
+}
+
+#about{
+    height: 700px;
+    background: pink;
+    display: flex;
+    width: 100%;
+}
+
+#about .about-section .about-content .intro-about{
+    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(188, 77, 52);
+    padding-top: 10%;
+    padding-left: 8%;
+    padding-bottom: 0%;
+}
+
+#about .about-section .about-content .who{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #81045f;
+    padding-left: 8%;
+    padding-top: 0%;
+    margin-bottom: 2%;
+}
+
+#about .about-section .about-content .info{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(57, 18, 9, 1);
+    padding-left: 5%;
+    padding-top: .5%;
+    margin-top: 1%;
+    margin-left: 40%;
+}
+
+#about .about-section .about-content h1{
+    font-size: 30px;
+    color: rgb(160, 65, 44);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 5%;
+    padding-top: 12%;
+    margin-top: 1%;
+    margin-left: 40%;
+}
+
+.about-section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.about-content{
+    padding-left: 1%;
+    margin-left: 1%;
+    padding-right: 0;
+    margin-right: 1%;
+    width: 90%;
+}
+
+.about-title{
+    float: left;
+    padding-top: 2%;
+    padding-left: 10%;
+    margin-right: 0;
+    width: 45%;
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 40px;
+    margin-top: 6%;
+    margin-left: 12%;
+    width: 70%;
+    border: solid rgb(57, 18, 9);
+    border-width: 5px 5px;
+    box-shadow: 10px 10px 10px 10px rgba(244, 51, 8, 0.453);
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(57, 18, 9, 1);
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tab-contents ul li span{
+    font-weight: 500;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+#skills{
+    height: 700px;
+    background: pink;
+    display: inline-block;
+    width: 100%;
+}
+
+#skills .skills-section .skills-content .skills-intro{
+    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(188, 77, 52);
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 0%;
+}
+
+#skills .skills-section .skills-content .skills-title{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #81045f;
+    padding-left: 8%;
+    padding-top: 1%;
+}
+
+#skills .skills-section .skills-content .skills-description{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(57, 18, 9, 1);
+    padding-left: 8%;
+    padding-top: 1%;
+}
+
+#skills .skills-section .py-icon{
+    padding-left: 20%;
+    padding-top: 5%;
+    padding-right: 12%;
+    float: left;
+}
+
+#skills .skills-section .py-icon .fa-brands{
+    font-size: 70px;
+    color: rgb(230, 65, 65);
+    padding: 0.5%;
+}
+
+#skills .skills-section .py-icon p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#skills .skills-section .c-sharp{
+    padding-top: 5%;
+    padding-right: 12%;
+    display:block;
+    left: 0;
+    float: left;
+}
+
+#skills .skills-section .c-sharp .fa-solid{
+    font-size: 65px;
+    color: rgb(230, 65, 65);
+    padding-bottom: 0.5%;
+}
+
+#skills .skills-section .c-sharp p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+
+#skills .skills-section .css{
+    padding-left: 1%;
+    padding-top: 4.5%;
+    padding-right: 12%;
+    float: left;
+}
+
+#skills .skills-section .css .fa-brands{
+    font-size: 80px;
+    color: rgb(230, 65, 65);
+    padding: 0.5%;
+}
+
+#skills .skills-section .css p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 13%;
+    padding-left: 6%;
+}
+
+#skills .skills-section .git{
+    padding-left: 1%;
+    padding-top: 4.5%;
+    float: left;
+}
+
+#skills .skills-section .git .fa-brands{
+    font-size: 80px;
+    color: rgb(230, 65, 65);
+    padding: 0.5%;
+}
+
+#skills .skills-section .git p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 13%;
+    padding-left: 12%;
+}
+
+#skills .skills-section .github{
+    padding-left: 20%;
+    padding-top: 5%;
+    margin-right: 12%;
+    float: left;
+}
+
+#skills .skills-section .github .fa-brands{
+    font-size: 70px;
+    color: rgb(230, 65, 65);
+    padding: 0.5%;
+}
+
+#skills .skills-section .github p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#skills .skills-section .html{
+    padding-left: 1.5%;
+    padding-top: 4.5%;
+    padding-right: 12%;
+    float: left;
+}
+
+#skills .skills-section .html .fa-brands{
+    font-size: 80px;
+    color: rgb(230, 65, 65);
+    padding-top: 0.5%;
+    padding-left: 3%;
+}
+
+#skills .skills-section .html p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#skills .skills-section .command{
+    padding-left: .1%;
+    padding-top: 4.5%;
+    padding-right: 5%;
+    float: left;
+}
+
+#skills .skills-section .command .fa-sharp{
+    font-size: 75px;
+    color: rgb(230, 65, 65);
+    padding-top: 0.5%;
+    padding-left: 20%;
+    padding-bottom: 2%;
+}
+
+#skills .skills-section .command p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#skills .skills-section .c-plus{
+    padding-top: 4%;
+    float: left;
+}
+
+#skills .skills-section .c-plus .c{
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(230, 65, 65);
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-bottom: 1.5%;
+}
+
+#skills .skills-section .c-plus p{
+    font-size: 22px;
+    color: rgb(90, 86, 86);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50%;
+}
+
+#contact{
+    height: 700px;
+    background: pink;
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+}
+
+#contact .contact-section .contact-content .contact-intro{
+    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(188, 77, 52);
+    padding-top: 10%;
+    padding-left: 8%;
+    padding-bottom: 0%;
+}
+
+#contact .contact-section .contact-content .contact-title{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #81045f;
+    padding-left: 8%;
+    padding-top: 1%;
+}
+
+#contact .contact-section .contact-content .contact-description{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(57, 18, 9, 1);
+    padding-left: 8%;
+    padding-top: 1%;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 85%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+}
+  
+td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    color: #81045f;
+    font-size: 22px;
+}
+
+#contact a {
+    color: #81045f;
+}
+
+@media (max-width: 1231px){
+    label.logo{
+        font-size: 30px;
+        padding-right: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    td, th {
+        font-size: 40px;
+    }
+
+    .tab-titles {
+        margin-left: 45%;
+        
+    }
+
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+    
+    .tab-contents ul li span{
+        font-weight: 500;
+    }
+    
+    .tab-contents{
+        display: none;
+        margin-left: 45%;
+    }
+    
+    .tab-contents.active-tab{
+        display: block;
+    }
+
+} 
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    #menu {
+        z-index: 99;
+    }
+
+
+    #menu .hamburger {
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        border: 3px solid rgb(57, 18, 9, 1);
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        cursor: pointer;
+        transform: scale(0.8);
+        margin-right: 5px;
+        margin-top: 12px;
+        padding-top: 1px;
+    }
+
+    #menu .hamburger .bar {
+        height: 2px;
+        width: 30px;
+        position: relative;
+        background-color: rgb(57, 18, 9, 1);
+        z-index: -1;
+    }
+    #menu .hamburger .bar::after,
+    #menu .hamburger .bar::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background-color: rgb(57, 18, 9, 1);
+        transition: 0.3s ease;
+        transition-property: top, bottom;
+    }
+    #menu .hamburger .bar::after {
+        top: 8px;
+    }
+    #menu .hamburger .bar::before {
+        bottom: 8px;
+    }
+    #menu .hamburger.active .bar::before {
+        bottom: 0;
+    }
+    #menu .hamburger.active .bar::after {
+        top: 0;
+    }
+    #menu .hamburger:hover {
+        background-color: transparent;
+    }
+
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(210, 145, 145);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li{
+        font-size: 30px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #home{
+        height: auto;
+    }
+
+    #home .home-section{
+        height: auto;
+        margin-top: 20%;
+    }
+
+    #home .home-section .home-content .name{
+        font-size: 30px;
+    }
+
+    #home .home-section .home-content .description{
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .home-img img{
+        border-radius: 0%;
+        max-width: 80%;
+        width: 100%;
+        margin: 10px 50px 10px;
+        padding-left: 8%;
+        margin-left: 0;
+        padding-right: 0;
+        margin-right: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        right: 50%;
+        box-shadow: none;
+    }
+
+    .home-section{
+        width: 100%;
+    }
+
+    .home-content{
+        float: none;
+        width: 85%;
+    }
+
+    #about{
+        height:auto;
+    }
+
+    #about .about-section .about-content .intro-about{
+        font-size: 20px;
+    }
+
+    #about .home-section .home-content .name{
+        font-size: 15px;
+    }
+
+    #about .about-section .about-content .info{
+        font-size: 18px;
+        padding-left: 5%;
+        padding-top: .5%;
+        margin-top: 1%;
+        margin-left: 4%;
+    }
+    
+    #about .about-section .about-content h1{
+        font-size: 23px;
+        padding-left: 5%;
+        padding-top: 12%;
+        margin-top: 1%;
+        margin-left: 4%;
+    }
+
+    #about .about-section .about-content .about-title{
+        float: none;
+        padding-top: 2%;
+        padding-left: 2%;
+        margin-right: 2%;
+        width: 90%;
+    }
+
+    #about .about-section .about-content .about-title .about-img img{
+        border-radius: 0%;
+        border: none;
+        max-width: 80%;
+        width: 100%;
+        margin: 10px 50px 10px;
+        padding-left: 8%;
+        margin-left: 0;
+        padding-right: 0;
+        margin-right: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        right: 50%;
+        box-shadow: none;
+    }
+
+    .other-info{
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+
+    .tab-contents{
+        padding-right: 10%;
+        margin-left: 0;
+    }
+
+    .tab-titles{
+        margin-left: 0;
+        
+    }
+
+    #skills{
+        height: auto;
+    }
+
+    #skills .skills-section{
+        padding-right: 5%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    #skills .skills-section .icons{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 20px;
+    }
+
+    #skills .skills-section .py-icon .fa-brands{
+        font-size: 40px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 10%;
+    }
+
+    #skills .skills-section .c-sharp .fa-c{
+        font-size: 35px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 10%;
+    }
+
+    #skills .skills-section .c-sharp .fa-hashtag{
+        font-size: 35px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+    }
+
+    #skills .skills-section .css{
+        margin-left: -10%;
+    }
+
+    #skills .skills-section .css p{
+        margin-top: 3%;
+    }
+
+    #skills .skills-section .css .fa-brands{
+        font-size: 40px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 20%;
+    }
+
+
+    #skills .skills-section .git {
+        margin-left: 0%;
+    }
+
+    #skills .skills-section .git p{
+        margin-top: -2%;
+    }
+
+    #skills .skills-section .git .fa-git-alt{
+        font-size: 45px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 20%;
+    }
+
+    #skills .skills-section .github{
+        margin-left: -15%;
+    }
+
+    #skills .skills-section .github p{
+        margin-left: 10%;
+    }
+
+    #skills .skills-section .github .fa-github{
+        font-size: 45px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 20%;
+    }
+
+    #skills .skills-section .html {
+        margin-left: 0%;
+    }
+
+    #skills .skills-section .html p{
+        margin-left: 5%;
+    }
+
+    #skills .skills-section .html .fa-brands{
+        font-size: 48px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 20%;
+    }
+
+    #skills .skills-section .command p{
+        font-size: 16px;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    #skills .skills-section .command .fa-sharp{
+        font-size: 40px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 22%;
+    }
+
+    #skills .skills-section .c-plus p{
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    #skills .skills-section .c-plus .c{
+        font-size: 35px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+        margin-left: 8%;
+    }
+
+    #contact{
+        height: auto;
+    }
+
+    td, th {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 858px){
+    #skills .skills-section .css{
+        padding-left: 20%;
+    }
+
+    #skills .skills-section .command{
+        padding-left: 3%;
+    }
+
+    td, th {
+        font-size: 20px;
+    }
+}

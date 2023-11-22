@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMR</title>
+    <link rel="icon" href="icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a20ca0a69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation section -->
+    <nav id="menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <div class="hamburger"><i class="bar"></i></div>
+        </label>
+        <label class="logo">A<span>&nbsp;M</span>&nbsp;R<span>&nbsp;.</span></label>
+        <ul class="menu-ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills & Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- end of navigation section -->
+
+    <div class="wrapper">
+        <!-- home section -->
+        <div id="home">
+            <div class="home-section">
+                <div class="home-content">
+                    <p class="intro">Hello, my name is</p>
+                    <p class="name">Amelia Mignonette Renaldo</p>
+                    <p class="description">I am Amelia Mignonette Grimaldi Thermopolis Renaldo, Princess of Genovia. </p>
+                </div>
+                <div class="home-img">
+                    <img src="homepic.jpg" alt="My Home Picture">
+                </div>
+            </div>
+        </div>
+        <!-- end of home section -->
+
+        <!-- about section -->
+        <div id="about">
+            <div class="about-section">
+                <div class="about-content">
+                    <div class="about-title">
+                        <p class="intro-about">ABOUT</p>
+                        <p class="who">Who is Amelia?</p>
+                            <div class="about-img">
+                                <img src="aboutpic.jpg" alt="My About Picture">
+                            </div>
+                    </div>
+                    <h1>A Genovian disoriented princess with daily struggles of being a royalty. </h1>
+                    <p class="info">My name is Amelia Mignonette Grimaldi Thermopolis Renaldo, a 2nd year college student at Swiss Federal Institute of Technology Zurich. Though I'm still a work-in-progress, I'm passionate about learning programming and aside from becoming a queen, I would like to become a full-stack developer after I graduate. </p>
+                    <div class="other-info">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('basic-info')">Basic Info</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="basic-info">
+                            <ul>
+                                <li><span>Age:</span>&emsp;&emsp;&emsp;&nbsp;&nbsp;&ensp;20</li>
+                                <li><span>Birthday:</span>&emsp;&ensp;&ensp;9/13/2002</li>
+                                <li><span>Nationality:</span>&emsp;Genovian</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>High School:</span>&emsp;&emsp;&emsp;&emsp;&nbsp;Albert Einstein High School</li>
+                                <li><span>Senior High School:</span>&emsp;King's College London</li>
+                                <li><span>College (Present):</span>&emsp;&emsp;Swiss Federal Institute of Technology Zurich</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of about section -->
+
+        <!-- skills section -->
+        <div id="skills">
+            <div class="skills-section">
+                <div class="skills-content">
+                    <p class="skills-intro">SKILLS & TOOLS</p>
+                    <h1 class="skills-title">My Toolbox & Things I Can Do</h1>
+                    <p class="skills-description">The skills, tools, and techonologies I use to bring my projects to life: </p>
+                </div>
+                <div class="icons">
+                    <div class="py-icon">
+                        <i class="fa-brands fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="c-sharp">
+                        <i class="fa-solid fa-c"></i>
+                        <i class="fa-solid fa-hashtag"></i>
+                        <p>C-sharp</p>
+                    </div>
+                    <div class="css">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="git">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="github">
+                        <i class="fa-brands fa-github"></i>
+                        <p>Github</p>
+                    </div>
+                    <div class="html">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML 5</p>
+                    </div>
+                    <div class="command">
+                        <i class="fa-sharp fa-solid fa-terminal"></i>
+                        <p>Command Line</p>
+                    </div>
+                    <div class="c-plus">
+                        <h1 class="c">C++</h1>
+                        <p>C++</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of skills section -->
+
+        <!-- contact section -->
+        <div id="contact">
+            <div class="contact-section">
+                <div class="contact-content">
+                    <h3 class="contact-intro">CONTACT</h3>
+                    <p class="contact-title">Get In Touch</p>
+                    <table>
+                        <tr>
+                            <td><a><i class="fa-brands fa-facebook"></i></a></td>
+                            <td>Facebook</td>
+                            <td>Amelia Renaldo</td>
+                        </tr>
+                        <tr>
+                            <td><a><i class="fa-brands fa-square-instagram"></i></a></td>
+                            <td>Instagram</td>
+                            <td>ameliarenaldo</td>
+                        </tr>
+                        <tr>
+                            <td><a><i class="fa-brands fa-google"></i></a></td>
+                            <td>Google Mail</td>
+                            <td>amelia@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><a><i class="fa-solid fa-mobile"></i></a></td>
+                            <td>Phone Number</td>
+                            <td>09123456789</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- end of contact section -->
+    </div>
+
+    <!-- a bit of javascript -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-- end of javascript -->
+</body>
+</html>
