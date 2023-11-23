@@ -1103,7 +1103,7 @@ footer {
         margin-left: 5%;
         margin-top: 20%;
         z-index: 5;
-        transition: background-color .4s;
+        transition: ease-in-out .4s;
     }
 
     .section-title {
@@ -1145,6 +1145,7 @@ footer {
         transition: background-color .4s;
         z-index: 0;
         margin-bottom: 5%;
+        transition: ease-in 0.5s;
     }
 
     .contact-title {
