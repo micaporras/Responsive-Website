@@ -123,6 +123,7 @@ a.active, a:hover{
     align-items: center;
     width: 100%;
     margin-top: 10%;
+    transition: ease-in-out .5s;
 }
 .home-content{
     padding-left: 1%;
@@ -141,6 +142,7 @@ a.active, a:hover{
     margin-left: 2%;
     width: 39%;
     box-shadow:10px 10px 10px rgba(238, 4, 4, 0.3);
+    transition: ease-in .7s;
 }
 
 #about{
@@ -1103,7 +1105,7 @@ footer {
         margin-left: 5%;
         margin-top: 20%;
         z-index: 5;
-        transition: ease-in-out .4s;
+        transition: ease-in-out .5s;
     }
 
     .section-title {
