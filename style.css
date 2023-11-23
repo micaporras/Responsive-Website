@@ -637,6 +637,206 @@ footer {
     color: black;
 }
 
+@media (min-width: 1930px){
+    #skills .skills-section .icons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    #skills .skills-section .py-icon{
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-right: 12%;
+        float: left;
+    }
+    
+    #skills .skills-section .py-icon .fa-brands{
+        font-size: 100px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+    }
+    
+    #skills .skills-section .py-icon p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #skills .skills-section .c-sharp{
+        padding-top: 5%;
+        padding-right: 12%;
+        display:block;
+        left: 0;
+        float: left;
+    }
+    
+    #skills .skills-section .c-sharp .fa-solid{
+        font-size: 85px;
+        color: rgb(230, 65, 65);
+        padding-bottom: 0.5%;
+    }
+    
+    #skills .skills-section .c-sharp p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 0%;
+        padding-left: 5%;
+        margin-top: 5%;
+    }
+    
+    #skills .skills-section .css{
+        padding-left: 1%;
+        padding-top: 4.5%;
+        padding-right: 12%;
+        float: left;
+    }
+    
+    #skills .skills-section .css .fa-brands{
+        font-size: 100px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+    }
+    
+    #skills .skills-section .css p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: -2%;
+        padding-left: 6%;
+    }
+    
+    #skills .skills-section .git{
+        padding-left: 1%;
+        padding-top: 4.5%;
+        float: left;
+        margin-left: -10%;
+    }
+    
+    #skills .skills-section .git .fa-brands{
+        font-size: 100px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+    }
+    
+    #skills .skills-section .git p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: -5%;
+        padding-left: 12%;
+    }
+    
+    #skills .skills-section .github{
+        padding-left: 20%;
+        padding-top: 10%;
+        margin-right: 12%;
+        float: left;
+    }
+    
+    #skills .skills-section .github .fa-brands{
+        font-size: 100px;
+        color: rgb(230, 65, 65);
+        padding: 0.5%;
+    }
+    
+    #skills .skills-section .github p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 2%;
+    }
+    
+    #skills .skills-section .html{
+        padding-left: 1.5%;
+        padding-top: 4.5%;
+        padding-right: 12%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    
+    #skills .skills-section .html .fa-brands{
+        font-size: 100px;
+        color: rgb(230, 65, 65);
+        padding-top: 0.5%;
+        padding-left: 3%;
+    }
+    
+    #skills .skills-section .html p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #skills .skills-section .command{
+        padding-left: .1%;
+        padding-top: 4.5%;
+        padding-right: 5%;
+        float: left;
+        margin-left: -10%;
+        margin-top: 5%;
+    }
+    
+    #skills .skills-section .command .fa-sharp{
+        font-size: 100px;
+        color: rgb(230, 65, 65);
+        padding-top: 0.5%;
+        padding-left: 0%;
+        padding-bottom: 2%;
+        margin-left: 10%;
+    }
+    
+    #skills .skills-section .command p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #skills .skills-section .c-plus{
+        padding-top: 4%;
+        float: left;
+        margin-left: -15%;
+    }
+    
+    #skills .skills-section .c-plus .c{
+        font-size: 90px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(230, 65, 65);
+        padding-top: 1%;
+        padding-left: 0%;
+        padding-bottom: 1.5%;
+    }
+    
+    #skills .skills-section .c-plus p{
+        font-size: 30px;
+        color: rgb(90, 86, 86);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 10%;
+    }
+
+    #contact {
+        padding-top: 20%;
+    }
+
+    #contact p {
+        font-size: 25px;
+    }
+
+    #contact .contact-container .contact-data .section-title{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #contact .contact-label, .contact-box::placeholder, .contact-input {
+        font-size: 20px;
+    }
+    
+}
 
 @media (max-width: 1231px){
     label.logo{
@@ -684,6 +884,181 @@ footer {
 
 
 } 
+
+@media (min-width: 859px) {
+
+    .contact {
+        padding-bottom: 0;
+        background-color:pink;
+    }
+
+    .contact-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        row-gap: 0;
+    }
+
+    .contact-data {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        background-color:white;
+        padding: 2rem 1.5rem;
+        margin-left: 5%;
+        margin-top: 20%;
+        z-index: 5;
+        transition: ease-in-out .5s;
+    }
+
+    .section-title {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: #81045f;
+        text-align: center;
+        padding-left: 20%;
+        padding-top: 1%;
+        margin: 0 0 1.5rem;
+        transform: translateX(-3rem);
+    }
+
+    .contact-description{
+        color: black;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-description2{
+        color: black;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-description2 b{
+        color: rgb(180, 38, 180);
+    }
+
+    .contact-mail {
+        position: relative;
+        background-color: #81045f;
+        padding: 5rem 1.5rem 2.5rem;
+        margin-top: -2.5rem;
+        margin-right: 5%;
+        transition: background-color .4s;
+        z-index: 0;
+        margin-bottom: 5%;
+        transition: ease-in 0.5s;
+    }
+
+    .contact-title {
+        color: white;
+        font-size: xx-large;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-form, .contact-group {
+        display: grid;
+        row-gap: 1.25rem;
+    }
+
+    .contact-group {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .contact-form {
+        position: relative;
+    }
+
+    .contact-box {
+        position: relative;
+        width: 100%;
+        height: 58px;
+    }
+
+    .contact-input, .contact-button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        outline: none;
+        border: none;
+    }
+
+    .contact-input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #81045f;
+        border: 3px solid white;
+        color: white;
+        padding: .5rem 1rem;
+        font-weight: 16px;
+        transition: border .4s, background-color .4s;
+    }
+
+    .contact-input::placeholder{
+        color: white;
+        transition: opacity .4s;
+    }
+
+    .contact-input:focus{
+        border: 3px solid pink;
+    }
+
+    .contact-label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 400 ;
+        background-color: #81045f;
+        padding: 8px;
+        pointer-events: none;
+        transition: top .4s, opacity .4s, background-color .4s;
+        opacity: 0;
+    }
+
+    .contact-form .contact-area {
+        height: 10rem;
+
+    }
+
+    .contact-area textarea{
+        resize: none;
+        padding-top: 1rem;
+    }
+
+    .contact-button {
+        background-color: rgb(230, 65, 65);
+        cursor: pointer;
+        height: 40px;
+        color: white;
+    }
+
+    .contact-input:focus::placeholder {
+        opacity: 0;
+    }
+
+    .contact-input:focus + .contact-label,.contact-input:not(:placeholder-shown).contact-input:not(:focus) + .contact-label {
+        opacity: 1;
+        top: -16px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 100px;
+        margin-left: 5%;
+        padding-top: 2% ;
+        padding-bottom: 2%;
+    }
+}
 
 @media (max-width: 858px){
     .checkbtn{
@@ -1214,182 +1589,6 @@ footer {
 }
     
 
-
-@media (min-width: 859px) {
-
-    .contact {
-        padding-bottom: 0;
-        background-color:pink;
-    }
-
-    .contact-container {
-        position: relative;
-        display: grid;
-        grid-template-columns: 40% 60%;
-        row-gap: 0;
-    }
-
-    .contact-data {
-        position: relative;
-        width: 90%;
-        height: 300px;
-        background-color:white;
-        padding: 2rem 1.5rem;
-        margin-left: 5%;
-        margin-top: 20%;
-        z-index: 5;
-        transition: ease-in-out .5s;
-    }
-
-    .section-title {
-        font-size: 40px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: #81045f;
-        text-align: center;
-        padding-left: 20%;
-        padding-top: 1%;
-        margin: 0 0 1.5rem;
-        transform: translateX(-3rem);
-    }
-
-    .contact-description{
-        color: black;
-        font-weight: 600;
-        margin-bottom: 2rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .contact-description2{
-        color: black;
-        font-weight: 500;
-        margin-bottom: 2rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .contact-description2 b{
-        color: rgb(180, 38, 180);
-    }
-
-    .contact-mail {
-        position: relative;
-        background-color: #81045f;
-        padding: 5rem 1.5rem 2.5rem;
-        margin-top: -2.5rem;
-        margin-right: 5%;
-        transition: background-color .4s;
-        z-index: 0;
-        margin-bottom: 5%;
-        transition: ease-in 0.5s;
-    }
-
-    .contact-title {
-        color: white;
-        font-size: xx-large;
-        margin-bottom: 2rem;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .contact-form, .contact-group {
-        display: grid;
-        row-gap: 1.25rem;
-    }
-
-    .contact-group {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-    }
-
-    .contact-form {
-        position: relative;
-    }
-
-    .contact-box {
-        position: relative;
-        width: 100%;
-        height: 58px;
-    }
-
-    .contact-input, .contact-button {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 14px;
-        outline: none;
-        border: none;
-    }
-
-    .contact-input {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #81045f;
-        border: 3px solid white;
-        color: white;
-        padding: .5rem 1rem;
-        font-weight: 16px;
-        transition: border .4s, background-color .4s;
-    }
-
-    .contact-input::placeholder{
-        color: white;
-        transition: opacity .4s;
-    }
-
-    .contact-input:focus{
-        border: 3px solid pink;
-    }
-
-    .contact-label {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        position: absolute;
-        top: 8px;
-        left: 10px;
-        color: white;
-        font-size: 16px;
-        font-weight: 400 ;
-        background-color: #81045f;
-        padding: 8px;
-        pointer-events: none;
-        transition: top .4s, opacity .4s, background-color .4s;
-        opacity: 0;
-    }
-
-    .contact-form .contact-area {
-        height: 10rem;
-
-    }
-
-    .contact-area textarea{
-        resize: none;
-        padding-top: 1rem;
-    }
-
-    .contact-button {
-        background-color: rgb(230, 65, 65);
-        cursor: pointer;
-        height: 40px;
-        color: white;
-    }
-
-    .contact-input:focus::placeholder {
-        opacity: 0;
-    }
-
-    .contact-input:focus + .contact-label,.contact-input:not(:placeholder-shown).contact-input:not(:focus) + .contact-label {
-        opacity: 1;
-        top: -16px;
-    }
-
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 100px;
-        margin-left: 5%;
-        padding-top: 2% ;
-        padding-bottom: 2%;
-    }
-}
-
 @media (max-width: 489px) {
     .contact {
         background-color:pink;
@@ -1533,207 +1732,6 @@ footer {
     }
 
 
-}
-
-@media (min-width: 1930px){
-    #skills .skills-section .icons{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-        align-items: center;
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-
-    #skills .skills-section .py-icon{
-        padding-left: 20%;
-        padding-top: 5%;
-        padding-right: 12%;
-        float: left;
-    }
-    
-    #skills .skills-section .py-icon .fa-brands{
-        font-size: 100px;
-        color: rgb(230, 65, 65);
-        padding: 0.5%;
-    }
-    
-    #skills .skills-section .py-icon p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    #skills .skills-section .c-sharp{
-        padding-top: 5%;
-        padding-right: 12%;
-        display:block;
-        left: 0;
-        float: left;
-    }
-    
-    #skills .skills-section .c-sharp .fa-solid{
-        font-size: 85px;
-        color: rgb(230, 65, 65);
-        padding-bottom: 0.5%;
-    }
-    
-    #skills .skills-section .c-sharp p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-left: 0%;
-        padding-left: 5%;
-        margin-top: 5%;
-    }
-    
-    #skills .skills-section .css{
-        padding-left: 1%;
-        padding-top: 4.5%;
-        padding-right: 12%;
-        float: left;
-    }
-    
-    #skills .skills-section .css .fa-brands{
-        font-size: 100px;
-        color: rgb(230, 65, 65);
-        padding: 0.5%;
-    }
-    
-    #skills .skills-section .css p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-left: -2%;
-        padding-left: 6%;
-    }
-    
-    #skills .skills-section .git{
-        padding-left: 1%;
-        padding-top: 4.5%;
-        float: left;
-        margin-left: -10%;
-    }
-    
-    #skills .skills-section .git .fa-brands{
-        font-size: 100px;
-        color: rgb(230, 65, 65);
-        padding: 0.5%;
-    }
-    
-    #skills .skills-section .git p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-left: -5%;
-        padding-left: 12%;
-    }
-    
-    #skills .skills-section .github{
-        padding-left: 20%;
-        padding-top: 10%;
-        margin-right: 12%;
-        float: left;
-    }
-    
-    #skills .skills-section .github .fa-brands{
-        font-size: 100px;
-        color: rgb(230, 65, 65);
-        padding: 0.5%;
-    }
-    
-    #skills .skills-section .github p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-top: 2%;
-    }
-    
-    #skills .skills-section .html{
-        padding-left: 1.5%;
-        padding-top: 4.5%;
-        padding-right: 12%;
-        float: left;
-        margin-left: 3%;
-        margin-top: 5%;
-    }
-    
-    #skills .skills-section .html .fa-brands{
-        font-size: 100px;
-        color: rgb(230, 65, 65);
-        padding-top: 0.5%;
-        padding-left: 3%;
-    }
-    
-    #skills .skills-section .html p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    #skills .skills-section .command{
-        padding-left: .1%;
-        padding-top: 4.5%;
-        padding-right: 5%;
-        float: left;
-        margin-left: -10%;
-        margin-top: 5%;
-    }
-    
-    #skills .skills-section .command .fa-sharp{
-        font-size: 100px;
-        color: rgb(230, 65, 65);
-        padding-top: 0.5%;
-        padding-left: 0%;
-        padding-bottom: 2%;
-        margin-left: 10%;
-    }
-    
-    #skills .skills-section .command p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    #skills .skills-section .c-plus{
-        padding-top: 4%;
-        float: left;
-        margin-left: -15%;
-    }
-    
-    #skills .skills-section .c-plus .c{
-        font-size: 90px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: rgb(230, 65, 65);
-        padding-top: 1%;
-        padding-left: 0%;
-        padding-bottom: 1.5%;
-    }
-    
-    #skills .skills-section .c-plus p{
-        font-size: 30px;
-        color: rgb(90, 86, 86);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-left: 10%;
-    }
-
-    #contact {
-        padding-top: 20%;
-    }
-
-    #contact p {
-        font-size: 25px;
-    }
-
-    #contact .contact-container .contact-data .section-title{
-        font-size: 40px;
-        text-align: center;
-    }
-
-    #contact .contact-label, .contact-box::placeholder, .contact-input {
-        font-size: 20px;
-    }
-    
 }
 
 @media (max-width: 360px) {
