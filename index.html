@@ -45,7 +45,7 @@
         <!-- about section -->
         <div id="about">
             <div class="about-section">
-                <div class="about-content">
+                <div class="about-content reveal">
                     <div class="about-title">
                         <p class="intro-about">ABOUT</p>
                         <p class="who">Who is Amelia?</p>
@@ -82,7 +82,7 @@
 
         <!-- skills section -->
         <div id="skills">
-            <div class="skills-section">
+            <div class="skills-section reveal">
                 <div class="skills-content">
                     <p class="skills-intro">SKILLS & TOOLS</p>
                     <h1 class="skills-title">My Toolbox & Things I Can Do</h1>
@@ -209,20 +209,7 @@
     </div>
 
     <!-- a bit of javascript -->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+    <script src="script.js">
     </script>
     <!-- end of javascript -->
 </body>
