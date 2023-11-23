@@ -1015,8 +1015,8 @@ footer {
     }
 
     .contact {
-        padding-bottom: 0;
         background-color:pink;
+        min-height: 100vh;
     }
 
     .contact-container {
@@ -1187,6 +1187,11 @@ footer {
 }
 
 @media (max-width: 602px) {
+    .contact {
+        background-color:pink;
+        min-height: 200vh;
+    }
+
     .contact-container {
         grid-template-columns: 100%;
     }
@@ -1386,6 +1391,11 @@ footer {
 }
 
 @media (max-width: 489px) {
+    .contact {
+        background-color:pink;
+        min-height: 160vh;
+    }
+    
     label.logo{
         font-size: 25px;
         padding-right: 50px;
@@ -1724,6 +1734,24 @@ footer {
         font-size: 20px;
     }
     
+}
 
-    
+@media (max-width: 280px) {
+    label.logo{
+        font-size: 20px;
+        padding-right: 50px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact .section-title {
+        font-size: 16px;
+        margin-left: 30%;
+    }
+
+    #contact .contact-title {
+        font-size: 16px;
+    }
 }
