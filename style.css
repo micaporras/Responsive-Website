@@ -1759,3 +1759,9 @@ footer {
         font-size: 16px;
     }
 }
+
+@media (max-height: 660px) {
+    #contact {
+        min-height: 180vh;
+    }
+}
