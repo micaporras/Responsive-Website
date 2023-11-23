@@ -1189,7 +1189,7 @@ footer {
 @media (max-width: 602px) {
     .contact {
         background-color:pink;
-        min-height: 200vh;
+        min-height: 170vh;
     }
 
     .contact-container {
@@ -1736,10 +1736,14 @@ footer {
     
 }
 
-@media (max-width: 280px) {
+@media (max-width: 360px) {
     label.logo{
         font-size: 20px;
         padding-right: 50px;
+    }
+
+    #contact {
+        min-height: 190vh;
     }
 
     #contact p {
