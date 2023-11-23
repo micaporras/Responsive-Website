@@ -6,6 +6,26 @@
     box-sizing: border-box;
 }
 
+@keyframes slideIn {
+    from{
+        transform: translateX(-700px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -83,6 +103,8 @@ a.active, a:hover{
     padding-top: 8%;
     padding-left: 8%;
     padding-bottom: 0%;
+
+    animation: slideIn 1.5s ease-in;
 }
 
 #home .home-section .home-content .name{
@@ -94,6 +116,8 @@ a.active, a:hover{
     padding-top: 2%;
     margin-top: 1%;
     margin-bottom: 2%;
+
+    animation: slideIn 1.5s ease-in;
 }
 
 #home .home-section .home-content .description{
@@ -103,6 +127,8 @@ a.active, a:hover{
     padding-left: 8%;
     padding-top: 0%;
     margin-top: 1%;
+
+    animation: slideIn 1.5s ease-in;
 }
 
 #menu .hamburger:hover {
@@ -112,10 +138,10 @@ a.active, a:hover{
 
 #home{
     height: 700px;
-    background: rgb(252, 216, 255);
+    background-image: url("bg.jpg");
     display: flex;
     width: 100%;
-    background-size: cover;
+    background-size: 85px 50px;
 }
 
 .home-section{
@@ -123,7 +149,6 @@ a.active, a:hover{
     align-items: center;
     width: 100%;
     margin-top: 10%;
-    transition: ease-in-out .5s;
 }
 .home-content{
     padding-left: 1%;
@@ -142,14 +167,16 @@ a.active, a:hover{
     margin-left: 2%;
     width: 39%;
     box-shadow:10px 10px 10px rgba(238, 4, 4, 0.3);
-    transition: ease-in .7s;
+
+    animation: appear 1.5s ease-in;
 }
 
 #about{
     height: 700px;
-    background: pink;
+    background-image: url("bg.jpg");
     display: flex;
     width: 100%;
+    background-size: 85px 50px;
 }
 
 #about .about-section .about-content .intro-about{
@@ -225,6 +252,11 @@ a.active, a:hover{
     border: solid rgb(57, 18, 9);
     border-width: 5px 5px;
     box-shadow: 10px 10px 10px 10px rgba(244, 51, 8, 0.453);
+    transition-duration: 500ms;
+}
+
+.about-img img:hover{
+    transform: translate(-10px, -10px);
 }
 
 .tab-titles{
@@ -277,7 +309,7 @@ a.active, a:hover{
 
 #skills{
     height: 700px;
-    background: pink;
+    background:  #E0BEC8;
     display: inline-block;
     width: 100%;
 }
@@ -321,13 +353,17 @@ a.active, a:hover{
     font-size: 70px;
     color: rgb(230, 65, 65);
     padding: 0.5%;
+    transition-duration: 500ms;
 }
+
+
 
 #skills .skills-section .py-icon p{
     font-size: 22px;
     color: rgb(90, 86, 86);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 #skills .skills-section .c-sharp{
     padding-top: 5%;
@@ -341,6 +377,11 @@ a.active, a:hover{
     font-size: 65px;
     color: rgb(230, 65, 65);
     padding-bottom: 0.5%;
+    transition-duration: 500ms;
+}
+#skills .skills-section .c-sharp .fa-solid:hover{
+    color: #81045f;
+    transform: translateY(-10px);
 }
 
 #skills .skills-section .c-sharp p{
@@ -363,6 +404,7 @@ a.active, a:hover{
     font-size: 80px;
     color: rgb(230, 65, 65);
     padding: 0.5%;
+    transition-duration: 500ms;
 }
 
 #skills .skills-section .css p{
@@ -383,6 +425,7 @@ a.active, a:hover{
     font-size: 80px;
     color: rgb(230, 65, 65);
     padding: 0.5%;
+    transition-duration: 500ms;
 }
 
 #skills .skills-section .git p{
@@ -404,6 +447,7 @@ a.active, a:hover{
     font-size: 70px;
     color: rgb(230, 65, 65);
     padding: 0.5%;
+    transition-duration: 500ms;
 }
 
 #skills .skills-section .github p{
@@ -424,6 +468,7 @@ a.active, a:hover{
     color: rgb(230, 65, 65);
     padding-top: 0.5%;
     padding-left: 3%;
+    transition-duration: 500ms;
 }
 
 #skills .skills-section .html p{
@@ -439,12 +484,23 @@ a.active, a:hover{
     float: left;
 }
 
+#skills .skills-section .fa-brands:hover{
+    color: #81045f;
+    transform: translateY(-10px);
+}
+
 #skills .skills-section .command .fa-sharp{
     font-size: 75px;
     color: rgb(230, 65, 65);
     padding-top: 0.5%;
     padding-left: 20%;
     padding-bottom: 2%;
+    transition-duration: 500ms;
+}
+
+#skills .skills-section .command .fa-sharp:hover{
+    color: #81045f;
+    transform: translateY(-10px);
 }
 
 #skills .skills-section .command p{
@@ -465,6 +521,12 @@ a.active, a:hover{
     padding-top: 1%;
     padding-left: 15%;
     padding-bottom: 1.5%;
+    transition-duration: 500ms;
+}
+
+#skills .skills-section .c-plus .c:hover{
+    color: #81045f;
+    transform: translateY(-10px);
 }
 
 #skills .skills-section .c-plus p{
@@ -472,6 +534,72 @@ a.active, a:hover{
     color: rgb(90, 86, 86);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 50%;
+}
+
+#contact{
+    height: 700px;
+    background: linear-gradient(#E0BEC8, pink);
+    display: inline-block;
+    width: 100%;
+    margin-top: 0%;
+}
+
+#contact .contact-section .contact-content .contact-intro{
+    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(188, 77, 52);
+    padding-top: 10%;
+    padding-left: 8%;
+    padding-bottom: 0%;
+}
+
+#contact .contact-section .contact-content .contact-title{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #81045f;
+    padding-left: 8%;
+    padding-top: 1%;
+}
+
+#contact .contact-section .contact-content .contact-description{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(57, 18, 9, 1);
+    padding-left: 8%;
+    padding-top: 1%;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 85%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+}
+  
+td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    color: #81045f;
+    font-size: 22px;
+}
+
+#contact a {
+    color: #81045f;
+    transform: rotate(360deg);
+}
+
+.reveal{
+    opacity: 0;
+    transition: 1.5s all ease-in-out;
+}
+  
+.reveal.active{
+    opacity: 1;
 }
 
 .contact {
